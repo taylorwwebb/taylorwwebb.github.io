@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+}
+*:before,
+*:after {
+ box-sizing: border-box;
+}
+::-moz-selection{
+    background: #4ac3f7;
+    color: #3b3b3b;
+}
+::selection {
+    background: #4ac3f7;
+    color: #3b3b3b;
+}
+a:link{ /* unvisited link */
+	color: #a3a3a3;
+	text-decoration: none;
+}
+a:visited { /* visited link */
+	color: #a3a3a3;
+	text-decoration: none;
+}
+a:hover { /* mouse over link */
+	color: #4ac3f7;
+	text-decoration: none;
+}
+a:active { /* selected link */
+	color: #3b3b3b;
+	text-decoration: none;
+}
+html{
+    min-height: 100%;
+    position: relative;
+    width: 640px;
+    background: #f2f4f5;
+    color: #3b3b3b;
+    font-weight: 100;
+	margin: 0px auto 0px auto;
+    padding: 0;
+    font-family: 'PT Serif', Sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+}
+body{
+    padding: 0 0 110px 0;
+}
+header{
+	position: relative;
+	width: 100%;
+	height: 250px;
+}
+header .title{
+	position: relative;
+	width: 100%;
+    height: 100%;
+    padding: 50px 0 0 0;
+    line-height: 260px;
+    font-size: 50px;
+    text-align: center;
+}
+nav{
+    position: relative;
+    width: 100%;
+    height: 70px;
+}
+.button{
+    position: relative;
+    float: left;
+    display: block;
+    width: 25%;
+    height: 100%;
+    text-align: center;
+}
+.button:hover{
+	color: #4ac3f7;
+	cursor: pointer;
+	-webkit-animation: hoverFading 0.5s; /*Safari and Chrome:*/
+	animation: hoverFading 0.5s;
+}
+nav .button{
+    line-height: 70px;
+    font-size: 20px;
+}
+@keyframes hoverFading{
+	0% {color: #3b3b3b;}
+}
+@-webkit-keyframes hoverFading{
+	0% {color: #3b3b3b;}
+}
+nav .active:hover{
+	color: #3b3b3b;
+	cursor: default;
+}
+main{
+    position: relative;
+    width: 100%;
+}
+main .textbox{
+    position: relative;
+    width: 90%;
+    margin: 0 5%;
+}
+main .headshot{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    margin: 0;
+    background: url('files/images/Webb_headshot.jpg') no-repeat center;
+}
+main .section-title{
+	padding: 30px 0 15px 0;
+    font-size: 20px;
+	font-weight: 600;
+}
+main .publications{
+	padding: 0 0 0 40px;
+	text-indent: -40px;
+}
+footer{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 110px;
+}
+footer .button{
+    position: relative;
+    padding: 30px 0 20px 0;
+    line-height: 60px;
+    font-size: 18px;
+}
